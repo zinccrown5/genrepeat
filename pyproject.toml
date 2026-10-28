@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zinccrown5-genrepeat"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别生成的重复退化的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "zinccrown5" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://zinccrown5.github.io"
+Repository = "https://github.com/zinccrown5/genrepeat"
+Issues = "https://github.com/zinccrown5/genrepeat/issues"
+
+[project.scripts]
+genrepeat = "genrepeat:main"
+
+[tool.setuptools]
+py-modules = ["genrepeat"]
